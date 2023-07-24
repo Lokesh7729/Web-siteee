@@ -50,6 +50,7 @@ ul {
   max-width: 1180px;
   margin-inline: auto;
   padding: var(--padding-inline-section);
+  overflow: hidden;
 }
 .banner-text {
   color: white;
@@ -212,9 +213,6 @@ header {
   margin-top: 25px;
   display:inline-block;
 }
-.person-name{
- 
-}
 
 
 
@@ -310,3 +308,4 @@ header {
   justify-content: center;
   gap: 30px;
 }
+
