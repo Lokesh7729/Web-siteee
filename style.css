@@ -4,13 +4,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 
 :root {
   --primary-text-color: #183b56;
   --secondary-text-color: #577592;
   --accent-color: #2294ed;
   --accent-color-dark: #1d69a3;
-  --padding-inline-section: 20px;
+  --padding-inline-section: 10px;
 }
 
 body {
@@ -50,11 +53,9 @@ ul {
   max-width: 1180px;
   margin-inline: auto;
   padding: var(--padding-inline-section);
-  overflow: hidden;
 }
 .banner-text {
   color: white;
-  padding: 15px 30px;
 }
 .flex {
   display: flex;
@@ -101,7 +102,7 @@ ul {
 
 /* nav bar */
 .main-nav {
-  margin: 20px;
+  margin: auto;
   justify-content: space-between;
 }
 
@@ -132,7 +133,7 @@ header {
   margin-top: 20px;
 }
 .header-right img {
-  width: 600px;
+  width: 40vw;
 }
 .get-started-btn {
   margin-top: 20px;
@@ -146,7 +147,7 @@ header {
   color: var(--primary-text-color);
 }
 .logos {
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .logo {
@@ -168,10 +169,12 @@ header {
   margin-bottom: 20px;
 }
 .features-area {
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 40px;
-  margin-top: 20px;
+  padding-bottom: 100px;
 }
 
 .features-card {
@@ -188,10 +191,14 @@ header {
 
 .big-feature-section {
   padding: 30px var(--padding-inline-section);
+  justify-content: space-evenly;
+  gap: 36px;
+  flex-wrap: wrap;
 }
 .big-feature-container {
   gap: 30px;
 }
+
 .feature-img img {
   max-width: 100%;
 }
@@ -211,10 +218,8 @@ header {
   max-height: 48px;
   /* padding: 20px; */
   margin-top: 25px;
-  display:inline-block;
+  display: inline-block;
 }
-
-
 
 /* example section */
 .examples-header {
@@ -309,3 +314,35 @@ header {
   gap: 30px;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  /* display: none; */
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+  z-index: 999;
+  display: none;
+}
+
+.nav-open .nav-main {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+  display: block;
+}
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
