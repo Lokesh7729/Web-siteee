@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY-Website</title>
     <link rel="stylesheet" href="style.css" />
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script defer src="./index.js"></script>
   </head>
   <body>
     <!-- top banner -->
@@ -18,12 +23,12 @@
 
     <!-- nav-bar -->
     <nav>
-      <div class="container main-nav flex">
+      <div class="container main-nav flex ">
         <a href="#" class="company-logo">
           <img src="./assets/asset 1.png" alt="company logo" />
         </a>
-        <div class="nav-links">
-          <ul class="flex">
+        <div class="nav-links nav-main ">
+          <ul class="flex nav-main">
             <li><a href="#" class="hover-link">Products</a></li>
             <li><a href="#" class="hover-link">Customer</a></li>
             <li><a href="#" class="hover-link">Pricing</a></li>
@@ -31,7 +36,12 @@
             <li><a href="#" class="hover-link secondary-button">Sign in</a></li>
             <li><a href="#" class="hover-link primary-button">Sign up</a></li>
           </ul>
+          
         </div>
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
       </div>
     </nav>
 <!-- header section -->
@@ -155,7 +165,7 @@
         </div>
 
 
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container container3">
             <div class="feature-img">
                 <img src="./assets/asset 24.png" alt="">
             </div>
